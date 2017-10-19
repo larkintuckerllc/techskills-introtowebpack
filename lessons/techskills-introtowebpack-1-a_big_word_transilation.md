@@ -1,8 +1,8 @@
 ----------------------------------
 
-filename: techskills-introtowebpack-1-the_big_idea
+filename: techskills-introtowebpack-1-a_big_word_transpilation
 
-title: The Big Idea
+title: A Big Word, Transpilation
 
 subtitle: Intro to webpack
 
@@ -11,8 +11,16 @@ subtitle: Intro to webpack
 Outline:
 
   - [_Question_:]
-    - I have heard of bundling in context of front-end frameworks, e.g., AngularJS and React.  Do you have to use these frameworks to use bundling?
-      - No. Bundling is a complementary feature; in this example we are going to write plain JavaScript (ES5).
+  - Ok, things are starting to get weird with words like transpilation; sounds complicated.
+    - Actually, transpilation is just a fancy word for translation.  In this case we are translating between two programming languages.
+    - Older browsers, e.g., IE 11 do not support ES2015 (aka ES6); they support older ES5.
+    - ES2015 (superset of ES5) adds some nice syntax to JavaScript.
+    - Goal is to write source in ES2015 but have dist be in ES5.
+
+
+
+
+
   - Bundle
     - Building off the previous example.
     - [_Cue_:]
@@ -50,9 +58,7 @@ Outline:
        - webpack Configuration
        - Editor
          - source-map/webpack.config.js
-  - [_Question_:]
-    - Wait, this pattern looks familiar?
-      - Yes, notice that this file is also a module (Node.js).
+    - Observation, notice that this file is also a module (Node.js).
    - [_Cue_:]
       - Execute webpack
        - Working directory
@@ -69,9 +75,7 @@ Outline:
      - Test
        - URL
          - source-map/dist/index.html
-  - Observations:
-    - Errors and break points.
-    - Map only loaded if developer tools open; Large
+  - Observation: Errors and break points.
   - Minifiation    
     - webpack alone pretty much only does bundling; but coupled with third-party plugins it can do a lot more.
     - Building off the previous example
