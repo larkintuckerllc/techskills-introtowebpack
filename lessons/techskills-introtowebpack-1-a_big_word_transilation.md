@@ -17,6 +17,7 @@ Outline:
     - ES2015 (superset of ES5) adds some nice syntax to JavaScript.
     - Goal is to write source in ES2015 but have dist be in ES5.
   - Transpile
+    - Building off the previous example.
     - [_Cue_:]
       - Install
       - Execute
@@ -26,7 +27,6 @@ Outline:
           npm install babel-core --save-dev
           npm install babel-loader --save-dev
           npm install babel-preset-es2015 --save-dev
-    - Building off the previous example.
     - [_Cue_:]
       - Source File
       - Editor
@@ -70,10 +70,56 @@ Outline:
     - [_Cue_:]
        - Execute webpack
         - Working directory
-          - bundle
+          - transpile
         - Command
           - ./node_modules/.bin/webpack
     - [_Cue_:]
       - Test
         - URL
-          - bundle/dist/index.html
+          - transpile/dist/index.html
+  - React
+    - As webpack is used heavily with React; thought to include a bit on how transpilation is relevant.
+    - While not required, most React developers use a short-hand syntax called JSX that needs to be transpiled.
+    - Building off the previous example.
+    - [_Cue_:]
+      - Install
+      - Execute
+        - Working directory
+          - react
+        - Command
+          npm install babel-preset-react --save-dev
+          npm install react --save
+          npm install react-dom --save
+    - [_Cue_:]
+      - Source File
+      - Editor
+        - react/.babelrc
+    - [_Cue_:]
+      - Source File
+      - Editor
+        - react/webpack.config.js
+    - [_Cue_:]
+      - Source File
+      - Editor
+        - react/dist/index.html
+    - [_Cue_:]
+      - Source File
+      - Editor
+        - react/src/index.jsx
+    - [_Cue_:]
+      - Source File
+      - Editor
+        - react/src/Secondary.jsx
+    - [_Question_:]
+      - Is JSX just HTML?
+        - No, it is a set of special short-hand that convieniently mirrors most of HTML. One difference is that you use className instead of class. We see what it transpiles to in a minute.
+    - [_Cue_:]
+       - Execute webpack
+        - Working directory
+          - react
+        - Command
+          - ./node_modules/.bin/webpack
+    - [_Cue_:]
+      - Test
+        - URL
+          - react/dist/index.html
