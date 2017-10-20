@@ -1,6 +1,6 @@
 ----------------------------------
 
-filename: techskills-introtowebpack-1-production_builds
+filename: techskills-introtowebpack-4-production_builds
 
 title: Production Builds
 
@@ -11,8 +11,8 @@ subtitle: Intro to webpack
 Outline:
 
   - [_Question_:]
-  - In the last example, we saw that the bundle file was really big.
-    - Yes, there are a couple of things that you can do. We will explore the easy fix in this lesson.
+    - In the last example, we saw that the bundle file was really big.
+      - Yes, there are a couple of things that you can do. We will explore the easy fix in this lesson.
   - Production
     - Building off the previous example.
     - [_Cue_:]
@@ -53,6 +53,9 @@ Outline:
       - Test
         - URL
           - production/dist/index.html
+  - [_Question_:]
+    - Looks we have our production build, what are we missing?
+      - There are several convienence fixes we can do.
   - HTML
      - Normally, the contents of the dist folder are transitory. But we have our index.html in there.  
      - Also, there are cases where we can split the bundle (but our index.html has hard-coded reference to main.bundle.js).

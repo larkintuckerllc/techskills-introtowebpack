@@ -1,6 +1,6 @@
 ----------------------------------
 
-filename: techskills-introtowebpack-1-the_big_idea
+filename: techskills-introtowebpack-2-the_big_idea
 
 title: The Big Idea
 
