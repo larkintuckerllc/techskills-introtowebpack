@@ -1,0 +1,13 @@
+import React from 'react';
+import { render } from 'react-dom';
+import 'babel-polyfill';
+import Secondary from './Secondary';
+import './index.css';
+
+render(
+  <Secondary />,
+  document.getElementById('root'),
+);
+if (process.env.NODE_ENV !== 'production') {
+  window.console.log('Looks like we are in development mode!');
+}
